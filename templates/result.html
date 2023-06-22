@@ -7,16 +7,20 @@ Prediction - Hand Sign Digit Recognition
 <div class="container py-5">
 
     <header class="text-white text-center">
-        <h1 class="display-4">Hand Sign Digit Language Detection</h1>
-        <p class="lead mb-5">You will see the prediction of the input image.</p>
+        <h1 class="display-4">Breast Cancer Detection</h1>
+        <p class="lead mb-5">You will see the prediction of the input image : <br>
+            0 Means There is No Cancer. <br>
+            1 Means There is Cancer, Go To Doctor.
+            <br>
+        </p>
     </header>
 
     <header class="text-white text-center">
         <h1 class="display-5">Prediction</h1>
         {% if predictions %}
-        <h2 class="display-4 text-dark font-weight-bold">{{predictions}}</h2>
+        <h2 class="display-4 text-light font-weight-bold">{{predictions}}</h2>
         {% else %}
-        <h2 class="display-4 text-dark font-weight-bold">{{err}}</h2>
+        <h2 class="display-4 text-light font-weight-bold">{{err}}</h2>
         {% endif %}
     </header>
 </div>
