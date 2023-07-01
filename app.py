@@ -28,4 +28,4 @@ def predict_image_file():
 
 # Driver code
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port = 9000, host = 'https://Ahmed-breast-Bio-finalmodel-deepdeploypreediction.streamlit.app')
