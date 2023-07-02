@@ -23,7 +23,7 @@ def predict_image_file():
 
     except:
         error = "File cannot be processed."
-        return render_template("result.html", err=error)
+        return render_template("result.html", err=error, host = "https://finalbreastmodel-ro1i21297ha.streamlit.app/")
 
 
 # Driver code
