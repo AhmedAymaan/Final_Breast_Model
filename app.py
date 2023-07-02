@@ -23,9 +23,9 @@ def predict_image_file():
 
     except:
         error = "File cannot be processed."
-        return render_template("result.html", err=error, host = "https://finalbreastmodel-ro1i21297ha.streamlit.app/")
+        return render_template("result.html", err=error)
 
 
 # Driver code
 if __name__ == "__main__":
-    app.run(debug=True, port =4000)
+    app.run(debug=True, port =4000 , , host = "https://finalbreastmodel-ro1i21297ha.streamlit.app/")
