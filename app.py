@@ -28,4 +28,4 @@ def predict_image_file():
 
 # Driver code
 if __name__ == "__main__":
-    app.run(debug=True, port = 9000, host = 'https://finalbreastmodel-wul5002g1fd.streamlit.app')
+    app.run(debug=True, port = 9000, host = 'https://finalbreastmodel-ro1i21297ha.streamlit.app')
