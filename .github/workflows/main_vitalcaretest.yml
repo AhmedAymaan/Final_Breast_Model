@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'VitalCareTest'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2EEAAEC2365B405EB9038174EA6DA770 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FB41566B96184BB29902E1BD7D4B6403 }}
