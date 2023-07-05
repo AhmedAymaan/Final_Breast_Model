@@ -9,7 +9,6 @@ app = Flask(__name__)
 # Home route
 @app.route("/")
 def main():
-    # return 'Welcome to the Students API!'
     return render_template("index.html")
 
 
@@ -29,4 +28,11 @@ def predict_image_file():
 
 # Driver code
 if __name__ == "__main__":
-    app.run(debug=True, port =4000 , host = "localhost")
+    app.run(port=9000, debug=True)
+
+
+
+
+
+
+
