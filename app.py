@@ -9,7 +9,8 @@ app = Flask(__name__)
 # Home route
 @app.route("/")
 def main():
-    return 'Welcome to the Students API!'
+    # return 'Welcome to the Students API!'
+    return render_template("index.html")
 
 
 # Prediction route
