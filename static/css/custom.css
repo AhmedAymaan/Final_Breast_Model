@@ -21,7 +21,7 @@ body {
     text-align: center;
     max-width: 250px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 10px;
     background-image: linear-gradient(360deg, #12343b 0%, #2d545e 50%, #c89666 100%, #e1b382 0%);
 }
 
@@ -38,12 +38,14 @@ h3 {
 }
 
 h3 {
-
+    margin: 0 auto;
+    max-width: 250px;
     text-align: center;
-    background-image: linear-gradient(360deg, #12343b 0%, #2d545e 50%, #c89666 100%, #e1b382 0%);
+    background-image: linear-gradient(180deg, #12343b 0%, #2d545e 50%, #12343b 0%);
 }
 
 h6 {
+    color: #12343b;
     text-align: center;
 }
 
