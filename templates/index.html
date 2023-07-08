@@ -1,38 +1,33 @@
 {% extends "layout.html"%}
 {% block title %}
-DEEP LEARNING MODEL
+Prediction - Hand Sign Digit Recognition
 {% endblock %}
 
 {% block content %}
+<div class="container py-5">
 
+    <header class="text-white text-center">
+        <h1 class="display-4">Breast Cancer Detection</h1>
+        <p class="lead mb-5">You will see the prediction of the input image : <br>
+            0 Means There is No Cancer. <br>
+            1 Means There is Cancer, Go To Doctor.
+            <br>
+        </p>
+    </header>
 
-<head>
-    <title>Deep Learning Model For Predicting Breast Cancer By X-RAY Image</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-
-<div class="container">
-    <h1>Deep Learning Model For Predicting Breast Cancer By X-RAY Image</h1>
-    <form action="{{ url_for('predict_image_file') }}" enctype="multipart/form-data" method="POST">
-        <div class="image-preview">
-            <img id="previewImage" src="#" alt="Preview">
-        </div>
-        <div class="file-input">
-            <input type="file" id="upload" name="file" accept="image/*">
-        </div>
-        <button type="submit" id="imageResult" name="imageResult">Upload</button>
-    </form>
+    <header class="text-white text-center">
+        <h1 class="display-5">Prediction</h1>
+        {% if predictions %}
+        <h2 class="display-6 text-light font-weight-bold">{{predictions}}</h2>
+        <h6 class="display-6 text-light font-weight-bold">By Ahmed Ayman EL-Saey</h6>
+        {% else %}
+        <h2 class="display-4 text-light font-weight-bold">{{err}}</h2>
+        {% endif %}
+    </header>
 </div>
 <br>
 <div class="container2">
-    <h6>powered by</h6>
-    <br>
-    <h3>VitalCare+</h3>
+    <h3>This Website Belongs To VitalCare+ App</h3>
 </div>
-
-
-
-
 
 {% endblock %}
